@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%; /*10px ==100%----> (100/16px)*10px ==62.50%==10px*/
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    background: #f4f4f4;
+}
+.Header{
+    /* background: #f4f4f4; */
+    height:95vh;
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+}
+.container{
+    max-width: 1000px;
+    width:90%; /* age km kren ge screen ko tu 90% nyche scroll bar nahi aye ga*/
+    margin: 0 auto;
+}
+body .Header .nav-bar{
+    background-color:rgb(20, 2, 37);
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    width:100%;
+    height: 8rem; /* (8rem*10px==80 px)----> 10 px is root element*/
+}
+.nav-bar .logo{
+    float:left;
+}
+.nav-bar .logo img{
+    width:7rem; 
+    border:0.25em solid grey;
+    border-radius:50%;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+}
+.Header .nav-bar .nav-item{
+    float: right;
+}
+.nav-bar::after{
+    content:" ";
+    display:block;
+    clear:both;
+}
+.Header .nav-bar ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 2.5em;   
+    padding-left:1.5em;
+}
+.nav-bar ul li a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem; /* 1.6*62.50 == 16 px */
+    letter-spacing: 0.15em;
+    padding: 0.5em;
+}
+.nav-bar ul li a:hover{
+    color:gray;
+    border-bottom: 1px solid grey;
+}
+
+/* #### contact page styling ##### */
+.contact-form{
+    padding:14em 0em;
+}
+.form-wrappper .company-address{
+    float:left;
+    width:49%;
+    background: #fff;
+    height:570px;
+    border:2px dotted green;
+    padding:1.5em
+}
+.form-wrappper .form{
+    float:right;
+    width:49%;
+    background: #fff;
+    height:570px;
+    font-size: 1.6rem;
+    border:2px dotted black;
+    padding:1.5em;
+}
+.contact-form .container .form-wrapper::after{
+    content: "";
+    display: inline-block;
+    clear:both;
+}
+.text-grey{
+    color:grey;
+}
+.text-red{
+    color:#e63946;
+}
+.text-black{
+    color:rgba(48, 46, 46, 0.76);
+}
+.md-heading{
+ font-size:1.6rem;
+}
+p{
+    font-size: 1.2rem;
+} 
+.form-wrappper .company-address i{
+    display:inline;
+    margin-right: 1em;
+}
+.form-wrappper .company-address h2{
+    display:inline;
+    text-transform: uppercase;
+}
+.company-address .address-group{
+    margin-bottom: 1.7em;
+}
+.form-wrappper .company-address img{
+    max-width:95%;
+    width:40rem;
+    height:57%;
+    object-fit: cover;
+    object-position: right;
+}
+p,h2,h1{
+   letter-spacing: 0.15em; 
+}
+
+/* #### form styling  ############*/
+.lg-heading{
+    font-size: 2.0rem;
+    line-height: 1.5;
+}
+.form h1::after{
+    content: "";
+    display:inline-block;
+    border-top: solid 4px #e63946;
+    height:2px;
+    margin-bottom:0.5em;
+    width:100%;
+}
+.form-wrappper .form input{
+    width:100%;
+    padding: 0.15em;
+    margin-bottom: 0.5em;
+}
+.form-wrappper .form textarea{
+    width:99.5%;
+    height:10em;
+    margin-bottom: 0.5em;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 1.5em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/* ######## Media Query ############# */
+@media (max-width:769px){
+    html{
+        font-size: 50%;
+    }
+    body .Header .nav-bar{
+        width:100%;
+        height: 26rem; /* (8rem*10px==80 px)----> 10 px is root element*/
+    }
+    .nav-bar .logo{
+        float:none;
+    }
+    .Header .nav-bar .nav-item{
+        float:none;
+    }
+    .header-content{
+        padding-top: 10em;
+    }
+    .Header .nav-bar ul li{
+        display:block;
+        padding-left:0em;
+        margin: 2em; 
+        text-align: center;
+    }
+    .contact-form{
+        margin-top: 18em;
+    }
+    .form-wrappper .company-address{
+        float:none;
+        width:100%;
+        height:auto;
+        margin-bottom: 5rem;
+        padding:2em;
+    }
+    .form-wrappper .form{
+        float:none;
+        width:100%;
+        height:auto;
+        padding:2em;
+    }
+    .form-wrappper .company-address img{
+        width:98%;
+    }
+}
+
+@media(max-width:1000px) and (min-width:780px){
+    .form-wrappper .form textarea{
+        margin-bottom: 0em;
+    }
+    .form-btn{
+        display: block;
+        margin: 0 auto;
+        padding: 0.25em 1.5em;
+    }
+}
+@media (max-width:810px) and (min-width:790px){
+    .form-wrappper .company-address{
+        height:600px;
+    }
+    .form-wrappper .form{
+      height:600px;
+    }
+    .form-wrappper .company-address img{
+        height:54%;
+    }
+}
