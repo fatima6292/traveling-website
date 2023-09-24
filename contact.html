@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <header class="Header">
+        
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="logo">
+                    <img src="./img/logo.jpg">
+                </div>
+                <div class="nav-item">
+                     <ul>
+                        <li>
+                            <a href='./home.html'>Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="contact-form">
+            <div class="container">
+                <div class="form-wrappper">
+                    <div class="company-address">
+                        <div class="address-group">
+                            <i class="fa-sharp fa-solid fa-location-dot fa-3x text-red" ></i>
+                            <h2 class="text-grey md-heading">Location</h2>
+                            <p>#2661 Janakpuri Colony, city name, town name</p>
+                        </div>
+                        <div class="address-group">
+                            <i class="fa-regular fa-envelope fa-3x text-red"></i>
+                            <h2 class="text-grey md-heading">E-Mail</h2>
+                            <p>khadija@mycompany.com</p>
+                        </div>
+                        <div class="address-group">
+                            <i class="fa-solid fa-square-phone fa-3x text-red"></i>
+                            <h2 class="text-grey md-heading">Call</h2>
+                            <p class="call">03245678910</p>
+                        </div>
+                        <img src="./img/contact.jpg" alt="">
+                    </div>
+                    <div class="form">
+                        <h1 class="lg-heading text-black">Contact Us</h1>
+                        <p class="text-grey">Let us khow your question, suggestions and concerns by filling out the contact form below.</p>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="u-name">UserName</label>
+                                <input type="text" name="User-Name" id="u-name" required><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label><br>
+                                <input type="text" name="u-email" id="email" required><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone">Phone</label><br>
+                                <input type="number" name="User-Phone" id="Phone" required><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="text-box">Message</label><br>
+                                <textarea name="message" id="text-box"></textarea><br>
+                            </div>
+                            <button type="submit" class="form-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
